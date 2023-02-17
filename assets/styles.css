@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+:root{
+    --White: hsl(0, 0%, 100%);
+    --lightGrayishViolet: hsl(270, 3%, 87%);
+    --darkGrayishViolet: hsl(279, 6%, 55%);
+    --veryDarkViolet: hsl(278, 68%, 11%);
+
+    /* gradiants */
+
+    /* (active input border) */
+    --linearGradient: hsl(249, 99%, 64%) to hsl(278, 94%, 30%);
+    /* (input errors) */
+    --red: hsl(0, 100%, 66%);
+}
+
+body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards{
+    background: url(./images/bg-main-desktop.png);
+    width: 35%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: visible;
+
+    justify-content: space-between;
+    position: relative;
+}
+
+figure{
+    position: relative;
+}
+
+.card-first{
+    position: absolute;
+    right: -7rem;
+    left: 40%;
+    top: 15%;
+    width: 90%;
+}
+
+figure img{
+    width: 100%;
+}
+
+figcaption{
+    color: var(--White);
+}
+
+.card-logo{
+    position: absolute;
+    top: 20px;
+    width: 65px;
+    left: 20px;
+}
+
+.card-num{
+    position: absolute;
+    bottom: 4.5rem;
+    left: 6%;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+}
+
+.cardholder-name{
+    position: absolute;
+    left: 6%;
+    bottom: 25px;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.date{
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.year{
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.exp-date{
+    position: absolute;
+    bottom: 25px;
+    font-size: 1em;
+    right: 6%;
+}
+
+/* meore kart */
+
+.card-second{
+    position: absolute;
+    left: 60%;
+    top: 55%;
+    width: 90%;
+}
+
+.cvc{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    top: 44%;
+    right: 13%;
+    font-size: 1em;
+    letter-spacing: 1.5px;
+}
+
+/* inputes */
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 0 5rem 0 0;
+    gap: 13px;
+}
+
+.div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.one{
+    width: 80%;
+}
+
+.inputs p {
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+
+::placeholder{
+    font-size: 1.1rem;
+    color: var(--lightGrayishViolet);
+
+}
+
+.inputs input{
+    border: 1px solid var(--lightGrayishViolet);
+    border-radius: 4px;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: var(--veryDarkViolet);
+    padding-left: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;
+}
+
+.inputs input:focus{
+    outline-color: var(--lightGrayishViolet);
+    outline-width: 1px;
+}
+
+.date-cvc{
+    display: flex;
+    width: 80%;
+}
+
+.mm-yy{
+    display: flex;
+    gap: 10px;
+}
+
+.mm-yy input{
+    width: 55px;
+}
+
+.date{
+    width: 50%;
+}
+
+.cvc-input{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.confirm{
+    background-color: var(--veryDarkViolet);
+    border: none;
+    color: var(--White);
+    border-radius: 5px;
+    padding: 13px 0;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+    width: 80%;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;
+}
+
+.confirm:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: 1s;
+    background-color: hsla(278, 68%, 11%, 0.838);
+}
+
+/* thank you */
+
+.thank-you{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.thank-you img{
+    width: 75px;
+    margin-bottom: 2.5rem;
+}
+
+.thank-you h2{
+    color: var(--veryDarkViolet);
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-bottom: 6px;
+}
+
+.thank-you p {
+    text-transform: lowercase;
+    color: var(--darkGrayishViolet);
+    font-size: 1.1rem;
+    padding-bottom: 2.5rem;
+    letter-spacing: 1.3px;
+}
+
+.thank-you p::first-letter{
+    text-transform: capitalize;
+}
+
+input.blue-border {
+    border: 1px solid var(--veryDarkViolet);
+  }
+  
+  input.red-border {
+    border: 1px solid var(--red);
+  }
+
+.hidden-txt{
+    color: var(--red);
+    font-size: 12px !important;
+    letter-spacing: 1.5px;
+    display: none;
+  }

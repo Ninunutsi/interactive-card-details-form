@@ -1,0 +1,185 @@
+@media(min-width: 667px) and (max-width: 1024px){
+    .cards{
+        width: 45%;
+        flex-direction: column;   
+        justify-content: center;
+        background-repeat: no-repeat;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    
+    .card-first{
+        position: unset;
+    }
+    
+    .card-logo{
+        top: 15px;
+        width: 55px;
+        left: 15px;
+    }
+    
+    .card-num{
+        font-size: 1.3em;
+    }
+    
+    .cardholder-name{
+        font-size: 0.8em;
+    }
+    
+    .date{
+        font-size: 0.8em;
+    }
+    
+    .year{
+        font-size: 0.8em;
+    }
+    
+    .exp-date{
+        font-size: 0.8em;
+    }
+    
+    /* meore kart */
+    
+    .card-second{
+        position: unset;
+    }
+    
+    .cvc{
+        font-size: 0.8em;
+    }
+    
+    /* inputes */
+    
+    .inputs{
+        width: 55%;
+        padding: 0;
+    }
+    
+    .div{
+        align-items: center;
+    }
+}
+
+@media(max-width: 667px){
+    body{
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .cards{
+        background: url(./images/bg-main-mobile.png);
+        width: 100%;
+        height: 36vh;
+    
+        position: relative;
+    }
+    
+    figure{
+        position: relative;
+    }
+    
+    .card-first{
+        position: absolute;
+        right: unset;
+        left: 5%;
+        top: 50%;
+        width: 77%;
+        z-index: 9999;
+    }
+    
+    .card-logo{
+        top: 15px;
+        width: 50px;
+        left: 15px;
+    }
+    
+    .card-num{
+        font-size: 1.1em;
+    }
+    
+    .cardholder-name{
+        font-size: 0.8em;
+    }
+    
+    .date{
+        font-size: 0.8em;
+    }
+    
+    .year{
+        font-size: 0.8em;
+    }
+    /* meore kart */
+    
+    .card-second{
+        position: absolute;
+        left: 18%;
+        top: 12%;
+        width: 77%;
+    }
+    
+    .cvc{
+        font-size: 0.8em;
+    }
+    
+    /* inputes */
+    
+    .inputs{
+        margin-top: 10%;
+        width: 90%;
+        padding: 0;
+    }
+    
+    .one{
+        width: 100%;
+    }
+    
+    .inputs input{
+        margin-top: 6px;
+    }
+    
+    .date-cvc{
+        width: 100%;
+    }
+    
+    .mm-yy{
+        gap: 20px;
+    }
+    .confirm{
+        width: 100%;
+    }
+    
+    /* thank you */
+    
+    .thank-you{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+    
+    .thank-you img{
+        width: 75px;
+        margin-bottom: 2.5rem;
+    }
+    
+    .thank-you h2{
+        color: var(--veryDarkViolet);
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding-bottom: 6px;
+    }
+    
+    .thank-you p {
+        text-transform: lowercase;
+        color: var(--darkGrayishViolet);
+        font-size: 1.1rem;
+        padding-bottom: 2.5rem;
+        letter-spacing: 1.3px;
+    }
+    
+    .thank-you p::first-letter{
+        text-transform: capitalize;
+    }
+}
