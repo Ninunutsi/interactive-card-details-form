@@ -15,63 +15,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="cards">
-        <div class="card-first">
-            <figure>
-                <img src="./assets/images/bg-card-front.png" alt="">
-                <figcaption class="card-logo"><img src="./assets/images/card-logo.svg" alt=""></figcaption>
-                <figcaption class="card-num" id="cd-num">0000 0000 0000 0000</figcaption>
-                <figcaption class="cardholder-name" id="cardholder-name">Jane Apleseed</figcaption>
-                <figcaption class="exp-date" id="exp-date"><span class="date" id="date">00</span>/<span class="year" id="year-card">00</span></figcaption>
-            </figure>
-        </div>
-
-        <div class="card-second">
-            <figure>
-                <img src="./assets/images/bg-card-back.png" alt="">
-                <figcaption class="cvc" id="cvc-card">000</figcaption>
-            </figure>
-        </div>
-    </div>
-
-    <div class="inputs">
-        <div class="div" id="div">
-            <div class="one" >
-                <p>Cardholder Name</p>
-                <input type="text" name="cardholder" id="name" placeholder="e.g Jane Apleseed" maxlength="30" required>
+    <main>
+        <div class="cards">
+            <div class="card-first">
+                <figure>
+                    <img src="./assets/images/bg-card-front.png" alt="">
+                    <figcaption class="card-logo"><img src="./assets/images/card-logo.svg" alt=""></figcaption>
+                    <figcaption class="card-num" id="cd-num">0000 0000 0000 0000</figcaption>
+                    <figcaption class="cardholder-name" id="cardholder-name">Jane Apleseed</figcaption>
+                    <figcaption class="exp-date" id="exp-date"><span class="date" id="date">00</span>/<span class="year" id="year-card">00</span></figcaption>
+                </figure>
             </div>
     
-            <div class="one">
-                <p>Card Number</p>
-                <input type="text" inputmode="numeric" name="number" id="numbers" placeholder="e.g 1234 5678 9123 0000" maxlength="19" required>
+            <div class="card-second">
+                <figure>
+                    <img src="./assets/images/bg-card-back.png" alt="">
+                    <figcaption class="cvc" id="cvc-card">000</figcaption>
+                </figure>
             </div>
+        </div>
     
-            <div class="date-cvc">
-                <div class="date">
-                    <p>Exp. date (MM/YY)</p>
-                    <div class="mm-yy">
-                        <input type="text" name="month" class="number" id="month" placeholder="MM" maxlength="2" required>
-                        <input type="text" name="year" class="number" id="year" placeholder="YY" maxlength="2" required>
+        <div class="inputs">
+            <div class="div" id="div">
+                <div class="one" >
+                    <p>Cardholder Name</p>
+                    <input type="text" name="cardholder" id="name" placeholder="e.g Jane Apleseed" maxlength="30" required>
+                </div>
+        
+                <div class="one">
+                    <p>Card Number</p>
+                    <input type="text" inputmode="numeric" name="number" id="numbers" placeholder="e.g 1234 5678 9123 0000" maxlength="19" required>
+                </div>
+        
+                <div class="date-cvc">
+                    <div class="date">
+                        <p>Exp. date (MM/YY)</p>
+                        <div class="mm-yy">
+                            <input type="text" name="month" class="number" id="month" placeholder="MM" maxlength="2" required>
+                            <input type="text" name="year" class="number" id="year" placeholder="YY" maxlength="2" required>
+                        </div>
+                    </div>
+                    <div class="cvc-input">
+                        <p>CVC</p>
+                        <input type="text" name="number" id='cvc' class="number" placeholder="e.g 123" maxlength="3" required>
                     </div>
                 </div>
-                <div class="cvc-input">
-                    <p>CVC</p>
-                    <input type="text" name="number" id='cvc' class="number" placeholder="e.g 123" maxlength="3" required>
-                </div>
+    
+                <p class="hidden-txt" id="hidden">Inputs can't be empty</p>
+                <button class="confirm" id="btn-confirm">Confirm</button>
             </div>
-
-            <p class="hidden-txt" id="hidden">Inputs can't be empty</p>
-            <button class="confirm" id="btn-confirm">Confirm</button>
+    
+            <div class="thank-you" id="ty">
+                <img src="./assets/images/icon-complete.svg" alt="">
+                <h2>Thank you!</h2>
+                <p class="ty-para">We've added your card details</p>
+                <button class="confirm" id="btn-continue">Continue</button>
+            </div>
+            
         </div>
-
-        <div class="thank-you" id="ty">
-            <img src="./assets/images/icon-complete.svg" alt="">
-            <h2>Thank you!</h2>
-            <p class="ty-para">We've added your card details</p>
-            <button class="confirm" id="btn-continue">Continue</button>
-        </div>
-        
-    </div>
+    </main>
     
 
     <script src="./assets/script.js"></script>

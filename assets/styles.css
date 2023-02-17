@@ -22,7 +22,7 @@
     --red: hsl(0, 100%, 66%);
 }
 
-body{
+main{
     display: flex;
     justify-content: space-between;
     align-items: center;
